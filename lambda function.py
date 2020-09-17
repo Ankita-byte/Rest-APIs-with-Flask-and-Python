@@ -16,11 +16,12 @@ square_all=list(map(lambda x: x**2,li))
 print(square_all)
 
 
-#filter(func,seq) ****Need to import functools for using reduce
+#filter(func,seq) 
 fib = [0,1,1,2,3,5,8,13,21,34,55]
 result=list(filter(lambda x : x%2,fib))
 print(result)
 
-#reduce(func,seq)
+#reduce(func,seq)****Need to import functools for using reduce]'
+
 final=reduce(lambda x,y: x if x>y else y,li)
 print(final)
