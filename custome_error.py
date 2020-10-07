@@ -19,6 +19,10 @@ class Book:
         print(f'You have read {self.pages_read} out of {self.page_count}')
 
 obj=Book("Python",900)
-obj.read(12)
-obj.read(35)
-obj.read(900)
+try:
+    obj.read(12)
+    obj.read(35)
+    obj.read(900)
+
+except Toomanypagesreaderror as e:
+    print(e)
